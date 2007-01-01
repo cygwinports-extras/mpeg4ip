@@ -1,0 +1,343 @@
+mpeg4ip
+------------------------------------------
+MPEG4IP provides an end-to-end system to explore streaming multimedia. 
+The package includes many existing open source packages and the "glue" 
+to integrate them together. This is a tool for streaming video and audio 
+that is standards-oriented and free from proprietary protocols and 
+extensions.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  glib2-2.12.4-1
+  gtk2-x11-2.10.6-1
+  id3lib-3.8.3-1
+  libSDL12-1.2.11-1
+  libX11_6-1.1.1-1
+  liba52_0-0.7.4-2
+  libesound0-0.2.36-1
+  libmpeg2_0-0.4.0b-1
+  libxvidcore4-1.1.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.23-2
+  autoconf2.5-2.60-2
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-2
+  cygport-0.2.7-1
+  flex-2.5.33-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://mpeg4ip.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/mpeg4ip/
+
+-------------------------------------------
+
+Build instructions:
+  unpack mpeg4ip-1.5.0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./mpeg4ip-1.5.0.1-X.cygport all
+
+This will create:
+  /usr/src/mpeg4ip-1.5.0.1-X-src.tar.bz2
+  /usr/src/mpeg4ip-1.5.0.1-X.tar.bz2
+
+  /usr/src/libmpeg4ip-devel-1.5.0.1-X.tar.bz2
+  /usr/src/libmpeg4ip0-1.5.0.1-X.tar.bz2
+  /usr/src/libmpeg4ipSDL0-1.5.0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(mpeg4ip)
+  /usr/bin/gmp4player.exe
+  /usr/bin/h264_parse.exe
+  /usr/bin/mp4art.exe
+  /usr/bin/mp4dump.exe
+  /usr/bin/mp4extract.exe
+  /usr/bin/mp4info.exe
+  /usr/bin/mp4player.exe
+  /usr/bin/mp4tags.exe
+  /usr/bin/mp4trackdump.exe
+  /usr/bin/mp4videoinfo.exe
+  /usr/bin/mpeg2video_parse.exe
+  /usr/bin/mpeg4vol.exe
+  /usr/bin/mpeg_ps_extract.exe
+  /usr/bin/mpeg_ps_info.exe
+  /usr/bin/sdl_pcm_play.exe
+  /usr/bin/yuvdump.exe
+  /usr/lib/mp4player_plugin/a52_audio_plugin.dll
+  /usr/lib/mp4player_plugin/a52_audio_plugin.la
+  /usr/lib/mp4player_plugin/aac_plugin.dll
+  /usr/lib/mp4player_plugin/aac_plugin.la
+  /usr/lib/mp4player_plugin/celp_plugin.dll
+  /usr/lib/mp4player_plugin/celp_plugin.la
+  /usr/lib/mp4player_plugin/ffmpeg_audio_plugin.dll
+  /usr/lib/mp4player_plugin/ffmpeg_audio_plugin.la
+  /usr/lib/mp4player_plugin/ffmpeg_video_plugin.dll
+  /usr/lib/mp4player_plugin/ffmpeg_video_plugin.la
+  /usr/lib/mp4player_plugin/g711_audio_plugin.dll
+  /usr/lib/mp4player_plugin/g711_audio_plugin.la
+  /usr/lib/mp4player_plugin/h261_plugin.dll
+  /usr/lib/mp4player_plugin/h261_plugin.la
+  /usr/lib/mp4player_plugin/h261_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/h261_rtp_plugin.la
+  /usr/lib/mp4player_plugin/h264_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/h264_rtp_plugin.la
+  /usr/lib/mp4player_plugin/href_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/href_rtp_plugin.la
+  /usr/lib/mp4player_plugin/href_text_plugin.dll
+  /usr/lib/mp4player_plugin/href_text_plugin.la
+  /usr/lib/mp4player_plugin/isma_enc_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/isma_enc_rtp_plugin.la
+  /usr/lib/mp4player_plugin/isma_enc_video_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/isma_enc_video_rtp_plugin.la
+  /usr/lib/mp4player_plugin/isma_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/isma_rtp_plugin.la
+  /usr/lib/mp4player_plugin/latm_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/latm_rtp_plugin.la
+  /usr/lib/mp4player_plugin/mp3_plugin.dll
+  /usr/lib/mp4player_plugin/mp3_plugin.la
+  /usr/lib/mp4player_plugin/mpeg2dec_video_plugin.dll
+  /usr/lib/mp4player_plugin/mpeg2dec_video_plugin.la
+  /usr/lib/mp4player_plugin/mpeg4_iso_plugin.dll
+  /usr/lib/mp4player_plugin/mpeg4_iso_plugin.la
+  /usr/lib/mp4player_plugin/plaintext_text_plugin.dll
+  /usr/lib/mp4player_plugin/plaintext_text_plugin.la
+  /usr/lib/mp4player_plugin/raw_audio_plugin.dll
+  /usr/lib/mp4player_plugin/raw_audio_plugin.la
+  /usr/lib/mp4player_plugin/raw_video_plugin.dll
+  /usr/lib/mp4player_plugin/raw_video_plugin.la
+  /usr/lib/mp4player_plugin/rfc2429_rtp_plugin.dll
+  /usr/lib/mp4player_plugin/rfc2429_rtp_plugin.la
+  /usr/lib/mp4player_plugin/rfc3267_plugin.dll
+  /usr/lib/mp4player_plugin/rfc3267_plugin.la
+  /usr/lib/mp4player_plugin/wav_plugin.dll
+  /usr/lib/mp4player_plugin/wav_plugin.la
+  /usr/lib/mp4player_plugin/xvid10_plugin.dll
+  /usr/lib/mp4player_plugin/xvid10_plugin.la
+  /usr/share/doc/Cygwin/mpeg4ip-1.5.0.1.README
+  /usr/share/doc/mpeg4ip-1.5.0.1/AUTHORS
+  /usr/share/doc/mpeg4ip-1.5.0.1/COPYING
+  /usr/share/doc/mpeg4ip-1.5.0.1/ChangeLog
+  /usr/share/doc/mpeg4ip-1.5.0.1/NEWS
+  /usr/share/doc/mpeg4ip-1.5.0.1/README
+  /usr/share/doc/mpeg4ip-1.5.0.1/TODO
+  /usr/share/man/man1/gmp4player.1.gz
+  /usr/share/man/man1/mp4encode.1.gz
+
+(libmpeg4ip0)
+  /usr/bin/cygh264util-0.dll
+  /usr/bin/cyghttp-0.dll
+  /usr/bin/cygismacryp-0.dll
+  /usr/bin/cygmp4-0.dll
+  /usr/bin/cygmp4av-0.dll
+  /usr/bin/cygmp4util-0.dll
+  /usr/bin/cygmp4v2-0.dll
+  /usr/bin/cygmpeg4ip_celp-0.dll
+  /usr/bin/cygmpeg4ip_celpbs-0.dll
+  /usr/bin/cygmpeg4ip_faad-0.dll
+  /usr/bin/cygmpeg4ip_fposrec-0.dll
+  /usr/bin/cygmpeg4ip_gnu-0.dll
+  /usr/bin/cygmpeg4ip_mpeg4_iso-0.dll
+  /usr/bin/cygsdp-0.dll
+  /usr/bin/cygsrtpif-0.dll
+
+(libmpeg4ipSDL0)
+  /usr/bin/cygmpeg4ipSDL-1-2-0.dll
+  /usr/bin/cygmsg_queue-0.dll
+
+(libmpeg4ip-devel)
+  /usr/bin/mpeg4ip-config
+  /usr/include/codec_plugin.h
+  /usr/include/h264_sdp.h
+  /usr/include/mp4.h
+  /usr/include/mp4av.h
+  /usr/include/mp4av_aac.h
+  /usr/include/mp4av_ac3.h
+  /usr/include/mp4av_adts.h
+  /usr/include/mp4av_amr.h
+  /usr/include/mp4av_audio.h
+  /usr/include/mp4av_h264.h
+  /usr/include/mp4av_hinters.h
+  /usr/include/mp4av_mp3.h
+  /usr/include/mp4av_mpeg3.h
+  /usr/include/mp4av_mpeg4.h
+  /usr/include/mpeg4_audio_config.h
+  /usr/include/mpeg4_sdp.h
+  /usr/include/mpeg4ip.h
+  /usr/include/mpeg4ip_bitstream.h
+  /usr/include/mpeg4ip_byteswap.h
+  /usr/include/mpeg4ip_config.h
+  /usr/include/mpeg4ip_config_set.h
+  /usr/include/mpeg4ip_getopt.h
+  /usr/include/mpeg4ip_version.h
+  /usr/include/rtp_plugin.h
+  /usr/include/sdp.h
+  /usr/include/sdp_error.h
+  /usr/include/text_plugin.h
+  /usr/lib/libh264util.dll.a
+  /usr/lib/libh264util.la
+  /usr/lib/libhttp.dll.a
+  /usr/lib/libhttp.la
+  /usr/lib/libismacryp.dll.a
+  /usr/lib/libismacryp.la
+  /usr/lib/libmp4.dll.a
+  /usr/lib/libmp4.la
+  /usr/lib/libmp4av.dll.a
+  /usr/lib/libmp4av.la
+  /usr/lib/libmp4util.dll.a
+  /usr/lib/libmp4util.la
+  /usr/lib/libmp4v2.dll.a
+  /usr/lib/libmp4v2.la
+  /usr/lib/libmpeg4ipSDL.dll.a
+  /usr/lib/libmpeg4ipSDL.la
+  /usr/lib/libmpeg4ip_celp.dll.a
+  /usr/lib/libmpeg4ip_celp.la
+  /usr/lib/libmpeg4ip_celpbs.dll.a
+  /usr/lib/libmpeg4ip_celpbs.la
+  /usr/lib/libmpeg4ip_faad.dll.a
+  /usr/lib/libmpeg4ip_faad.la
+  /usr/lib/libmpeg4ip_fposrec.dll.a
+  /usr/lib/libmpeg4ip_fposrec.la
+  /usr/lib/libmpeg4ip_gnu.dll.a
+  /usr/lib/libmpeg4ip_gnu.la
+  /usr/lib/libmpeg4ip_mpeg4_iso.dll.a
+  /usr/lib/libmpeg4ip_mpeg4_iso.la
+  /usr/lib/libmsg_queue.dll.a
+  /usr/lib/libmsg_queue.la
+  /usr/lib/libsdp.dll.a
+  /usr/lib/libsdp.la
+  /usr/lib/libsrtpif.dll.a
+  /usr/lib/libsrtpif.la
+  /usr/share/man/man3/MP4.3.gz
+  /usr/share/man/man3/MP4AddAudioTrack.3.gz
+  /usr/share/man/man3/MP4AddHintTrack.3.gz
+  /usr/share/man/man3/MP4AddODTrack.3.gz
+  /usr/share/man/man3/MP4AddRtpESConfigurationPacket.3.gz
+  /usr/share/man/man3/MP4AddRtpHint.3.gz
+  /usr/share/man/man3/MP4AddRtpImmediateData.3.gz
+  /usr/share/man/man3/MP4AddRtpPacket.3.gz
+  /usr/share/man/man3/MP4AddRtpSampleData.3.gz
+  /usr/share/man/man3/MP4AddRtpVideoHint.3.gz
+  /usr/share/man/man3/MP4AddSceneTrack.3.gz
+  /usr/share/man/man3/MP4AddSystemsTrack.3.gz
+  /usr/share/man/man3/MP4AddTrack.3.gz
+  /usr/share/man/man3/MP4AddTrackEdit.3.gz
+  /usr/share/man/man3/MP4AddVideoTrack.3.gz
+  /usr/share/man/man3/MP4AppendHintTrackSdp.3.gz
+  /usr/share/man/man3/MP4AppendSessionSdp.3.gz
+  /usr/share/man/man3/MP4BinaryToBase16.3.gz
+  /usr/share/man/man3/MP4BinaryToBase64.3.gz
+  /usr/share/man/man3/MP4CloneTrack.3.gz
+  /usr/share/man/man3/MP4Close.3.gz
+  /usr/share/man/man3/MP4ConvertFromMovieDuration.3.gz
+  /usr/share/man/man3/MP4ConvertFromTrackDuration.3.gz
+  /usr/share/man/man3/MP4ConvertFromTrackTimestamp.3.gz
+  /usr/share/man/man3/MP4ConvertToTrackDuration.3.gz
+  /usr/share/man/man3/MP4ConvertToTrackTimestamp.3.gz
+  /usr/share/man/man3/MP4CopySample.3.gz
+  /usr/share/man/man3/MP4CopyTrack.3.gz
+  /usr/share/man/man3/MP4Create.3.gz
+  /usr/share/man/man3/MP4DeleteTrack.3.gz
+  /usr/share/man/man3/MP4DeleteTrackEdit.3.gz
+  /usr/share/man/man3/MP4Dump.3.gz
+  /usr/share/man/man3/MP4FileInfo.3.gz
+  /usr/share/man/man3/MP4FindTrackId.3.gz
+  /usr/share/man/man3/MP4FindTrackIndex.3.gz
+  /usr/share/man/man3/MP4GetAudioProfileLevel.3.gz
+  /usr/share/man/man3/MP4GetDuration.3.gz
+  /usr/share/man/man3/MP4GetGraphicsProfileLevel.3.gz
+  /usr/share/man/man3/MP4GetHintTrackReferenceTrackId.3.gz
+  /usr/share/man/man3/MP4GetHintTrackRtpPayload.3.gz
+  /usr/share/man/man3/MP4GetHintTrackSdp.3.gz
+  /usr/share/man/man3/MP4GetNumberOfTracks.3.gz
+  /usr/share/man/man3/MP4GetODProfileLevel.3.gz
+  /usr/share/man/man3/MP4GetRtpHintNumberOfPackets.3.gz
+  /usr/share/man/man3/MP4GetRtpPacketBFrame.3.gz
+  /usr/share/man/man3/MP4GetRtpPacketTransmitOffset.3.gz
+  /usr/share/man/man3/MP4GetRtpTimestampStart.3.gz
+  /usr/share/man/man3/MP4GetSampleDuration.3.gz
+  /usr/share/man/man3/MP4GetSampleIdFromEditTime.3.gz
+  /usr/share/man/man3/MP4GetSampleIdFromTime.3.gz
+  /usr/share/man/man3/MP4GetSampleRenderingOffset.3.gz
+  /usr/share/man/man3/MP4GetSampleSize.3.gz
+  /usr/share/man/man3/MP4GetSampleSync.3.gz
+  /usr/share/man/man3/MP4GetSampleTime.3.gz
+  /usr/share/man/man3/MP4GetSceneProfileLevel.3.gz
+  /usr/share/man/man3/MP4GetSessionSdp.3.gz
+  /usr/share/man/man3/MP4GetTimeScale.3.gz
+  /usr/share/man/man3/MP4GetTrackAudioMpeg4Type.3.gz
+  /usr/share/man/man3/MP4GetTrackAudioType.3.gz
+  /usr/share/man/man3/MP4GetTrackBitRate.3.gz
+  /usr/share/man/man3/MP4GetTrackDuration.3.gz
+  /usr/share/man/man3/MP4GetTrackESConfiguration.3.gz
+  /usr/share/man/man3/MP4GetTrackEditDuration.3.gz
+  /usr/share/man/man3/MP4GetTrackEditDwell.3.gz
+  /usr/share/man/man3/MP4GetTrackEditMediaStart.3.gz
+  /usr/share/man/man3/MP4GetTrackEditStart.3.gz
+  /usr/share/man/man3/MP4GetTrackEditTotalDuration.3.gz
+  /usr/share/man/man3/MP4GetTrackFixedSampleDuration.3.gz
+  /usr/share/man/man3/MP4GetTrackMaxSampleSize.3.gz
+  /usr/share/man/man3/MP4GetTrackNumberOfEdits.3.gz
+  /usr/share/man/man3/MP4GetTrackNumberOfSamples.3.gz
+  /usr/share/man/man3/MP4GetTrackTimeScale.3.gz
+  /usr/share/man/man3/MP4GetTrackType.3.gz
+  /usr/share/man/man3/MP4GetTrackVideoFrameRate.3.gz
+  /usr/share/man/man3/MP4GetTrackVideoHeight.3.gz
+  /usr/share/man/man3/MP4GetTrackVideoType.3.gz
+  /usr/share/man/man3/MP4GetTrackVideoWidth.3.gz
+  /usr/share/man/man3/MP4GetVerbosity.3.gz
+  /usr/share/man/man3/MP4GetVideoProfileLevel.3.gz
+  /usr/share/man/man3/MP4Info.3.gz
+  /usr/share/man/man3/MP4MakeIsmaCompliant.3.gz
+  /usr/share/man/man3/MP4Modify.3.gz
+  /usr/share/man/man3/MP4Optimize.3.gz
+  /usr/share/man/man3/MP4Read.3.gz
+  /usr/share/man/man3/MP4ReadRtpHint.3.gz
+  /usr/share/man/man3/MP4ReadRtpPacket.3.gz
+  /usr/share/man/man3/MP4ReadSample.3.gz
+  /usr/share/man/man3/MP4ReadSampleFromEditTime.3.gz
+  /usr/share/man/man3/MP4ReadSampleFromTime.3.gz
+  /usr/share/man/man3/MP4SetAudioProfileLevel.3.gz
+  /usr/share/man/man3/MP4SetGraphicsProfileLevel.3.gz
+  /usr/share/man/man3/MP4SetHintTrackRtpPayload.3.gz
+  /usr/share/man/man3/MP4SetHintTrackSdp.3.gz
+  /usr/share/man/man3/MP4SetODProfileLevel.3.gz
+  /usr/share/man/man3/MP4SetRtpTimestampStart.3.gz
+  /usr/share/man/man3/MP4SetSampleRenderingOffset.3.gz
+  /usr/share/man/man3/MP4SetSceneProfileLevel.3.gz
+  /usr/share/man/man3/MP4SetSessionSdp.3.gz
+  /usr/share/man/man3/MP4SetTimeScale.3.gz
+  /usr/share/man/man3/MP4SetTrackESConfiguration.3.gz
+  /usr/share/man/man3/MP4SetTrackEditDuration.3.gz
+  /usr/share/man/man3/MP4SetTrackEditDwell.3.gz
+  /usr/share/man/man3/MP4SetTrackEditMediaStart.3.gz
+  /usr/share/man/man3/MP4SetTrackTimeScale.3.gz
+  /usr/share/man/man3/MP4SetVerbosity.3.gz
+  /usr/share/man/man3/MP4SetVideoProfileLevel.3.gz
+  /usr/share/man/man3/MP4WriteRtpHint.3.gz
+  /usr/share/man/man3/MP4WriteSample.3.gz
+  /usr/share/man/manm/api.mpt.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.5.0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
