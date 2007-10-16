@@ -1,7 +1,7 @@
 category: Audio Video
 requires: cygwin
 external-source: mpeg4ip
-sdesc: "Streaming multimedia libraries (runtime)"
+sdesc: "MPEG4 v2 library (runtime)"
 ldesc: "MPEG4IP provides an end-to-end system to explore streaming
 multimedia. The package includes many existing open source packages and
 the 'glue' to integrate them together. This is a tool for streaming
