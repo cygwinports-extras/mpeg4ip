@@ -7,28 +7,28 @@ that is standards-oriented and free from proprietary protocols and
 extensions.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  gtk2-x11-2.10.14-1
-  libSDL12-1.2.12-1
+  cygwin-1.5.25-11
+  glib2-2.14.6-1
+  gtk2-x11-2.12.9-1
+  libSDL12-1.2.13-1
   libX11_6-1.1.3-1
   liba52_0-0.7.4-3
-  libavcodec51-10755-1
-  libavutil49-10755-1
+  libavcodec51-13270-1
+  libavutil49-13270-1
   libid3_383-3.8.3-2
-  libmpeg2_0-0.4.0b-1
+  libmpeg2_0-0.4.0b-2
   libxvidcore4-1.1.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.6-1
-  gawk-3.1.5-4
+  cygport-0.3.10-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -42,17 +42,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack mpeg4ip-1.5.0.1-X-src.tar.bz2
+  unpack mpeg4ip-1.6.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./mpeg4ip-1.5.0.1-X.cygport all
+  cygport ./mpeg4ip-1.6.1-X.cygport all
 
 This will create:
-  /usr/src/libmp4v2-devel-1.5.0.1-X.tar.bz2
-  /usr/src/libmp4v2_0-1.5.0.1-X.tar.bz2
-  /usr/src/mpeg4ip-1.5.0.1-X-src.tar.bz2
-  /usr/src/mpeg4ip-1.5.0.1-X.tar.bz2
+  /usr/src/libmp4v2-devel-1.6.1-X.tar.bz2
+  /usr/src/libmp4v2_0-1.6.1-X.tar.bz2
+  /usr/src/mpeg4ip-1.6.1-X-src.tar.bz2
+  /usr/src/mpeg4ip-1.6.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -337,9 +337,11 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.5.0.1-1 -----
-Version bump.
+----- version 1.6.1-2 -----
+Rebuilt for ffmpeg r13270.
 
+----- version 1.6.1-1 -----
+Version bump.
 
 ----- version 1.5.0.1-1 -----
 Initial release for Cygwin.

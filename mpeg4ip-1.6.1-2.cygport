@@ -1,0 +1,33 @@
+DESCRIPTION=
+HOMEPAGE="http://mpeg4ip.sourceforge.net/"
+# SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="http://people.freebsd.org/~ahze/distfiles/${P}.tar.gz"
+
+PKG_NAMES="${PN} libmp4v2_0 libmp4v2-devel"
+PKG_HINTS="setup lib devel"
+PKG_CONTENTS[0]="--exclude=cygmp4v2-*.dll --exclude=libmp4v2.* --exclude=mp4.h
+                 --exclude=mpeg4ip.h --exclude=mpeg4ip_config.h --exclude=mpeg4ip_version.h
+                 --exclude=man3 --exclude=manm --exclude=mp4live.1*
+                 usr/"
+PKG_CONTENTS[1]="usr/bin/cygmp4v2-0.dll"
+PKG_CONTENTS[2]="usr/include/mp4.h usr/include/mpeg4ip.h usr/include/mpeg4ip_config.h
+                 usr/include/mpeg4ip_version.h usr/lib/libmp4v2.* usr/share/man/man3/"
+
+DIFF_EXCLUDES="mpeg4-2000.h.in mpeg4ip_config.h.in"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	mkdir -p config
+	cd ${B}
+	echo "bootstrapped" > bootstrapped
+	cygconf \
+		--disable-static \
+		--enable-player --enable-server --disable-mp4live \
+		--enable-ffmpeg \
+		--disable-arts --disable-esd --disable-nas \
+		--disable-ipv6 \
+		--disable-warns-as-err
+
+	cygmake
+}
