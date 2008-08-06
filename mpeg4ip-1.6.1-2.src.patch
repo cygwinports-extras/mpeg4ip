@@ -1,10 +1,8 @@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/acinclude.m4 src/mpeg4ip-1.6.1/acinclude.m4
 --- origsrc/mpeg4ip-1.6.1/acinclude.m4	1969-12-31 18:00:00.000000000 -0600
 +++ src/mpeg4ip-1.6.1/acinclude.m4	2008-05-25 22:40:09.359375000 -0500
 @@ -0,0 +1,2 @@
 +
 +AC_DEFUN([AM_PATH_ALSA], [ ifelse([$3], , : [$3])])
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/common/video/iso-mpeg4/src/Makefile.am src/mpeg4ip-1.6.1/common/video/iso-mpeg4/src/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/common/video/iso-mpeg4/src/Makefile.am	2006-02-09 11:57:29.000000000 -0600
 +++ src/mpeg4ip-1.6.1/common/video/iso-mpeg4/src/Makefile.am	2008-05-25 22:40:09.359375000 -0500
 @@ -1,5 +1,5 @@
@@ -21,7 +19,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
 +libmpeg4ip_mpeg4_iso_la_LDFLAGS = -no-undefined
 +
  EXTRA_DIST=example.par
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/configure.in src/mpeg4ip-1.6.1/configure.in
 --- origsrc/mpeg4ip-1.6.1/configure.in	2007-09-28 15:45:08.000000000 -0500
 +++ src/mpeg4ip-1.6.1/configure.in	2008-05-25 22:40:09.375000000 -0500
 @@ -31,9 +31,6 @@
@@ -53,7 +50,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  		  NASMFLAGS="-f win32"
  		  ;;
  		*)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/include/mpeg4ip.h src/mpeg4ip-1.6.1/include/mpeg4ip.h
 --- origsrc/mpeg4ip-1.6.1/include/mpeg4ip.h	2006-08-07 13:27:00.000000000 -0500
 +++ src/mpeg4ip-1.6.1/include/mpeg4ip.h	2008-05-25 22:40:09.390625000 -0500
 @@ -59,6 +59,7 @@
@@ -73,7 +69,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  #include <limits.h>
  #define u_int8_t uint8_t
  #define u_int16_t uint16_t
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/Makefile.am src/mpeg4ip-1.6.1/lib/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/Makefile.am	2006-09-29 14:55:39.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/Makefile.am	2008-05-25 22:40:09.406250000 -0500
 @@ -8,4 +8,4 @@
@@ -82,7 +77,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
 -SUBDIRS = utils audio avi ffmpeg fposrec gnu ismacryp mp4av mp4 mp4v2 msg_queue rtp sdp mpeg2t mpeg2ps srtp $(extradir)
 +SUBDIRS = utils audio avi ffmpeg fposrec gnu ismacryp mp4v2 mp4av mp4 msg_queue rtp sdp mpeg2t mpeg2ps srtp $(extradir)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/SDLAudio/configure.in src/mpeg4ip-1.6.1/lib/SDLAudio/configure.in
 --- origsrc/mpeg4ip-1.6.1/lib/SDLAudio/configure.in	2005-01-17 14:46:07.000000000 -0600
 +++ src/mpeg4ip-1.6.1/lib/SDLAudio/configure.in	2008-05-25 22:40:09.406250000 -0500
 @@ -1099,7 +1099,23 @@
@@ -118,7 +112,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  AM_CONDITIONAL(TARGET_WIN32, test $ARCH = win32)
  AM_CONDITIONAL(TARGET_BEOS, test $ARCH = beos)
  AM_CONDITIONAL(TARGET_MACOS, test $ARCH = macos)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/SDLAudio/src/Makefile.am src/mpeg4ip-1.6.1/lib/SDLAudio/src/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/SDLAudio/src/Makefile.am	2004-05-17 17:06:25.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/SDLAudio/src/Makefile.am	2008-05-25 22:40:09.421875000 -0500
 @@ -23,7 +23,7 @@
@@ -130,7 +123,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  libmpeg4ipSDL_la_DEPENDENCIES =	\
  	@SDL_EXTRALIBS@
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/ffmpeg/Makefile.am src/mpeg4ip-1.6.1/lib/ffmpeg/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/ffmpeg/Makefile.am	2006-09-29 14:55:39.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/ffmpeg/Makefile.am	2008-05-25 22:40:09.437500000 -0500
 @@ -4,6 +4,12 @@
@@ -146,7 +138,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/lib/utils
  
  AM_CFLAGS = -D_REENTRANT @BILLS_CWARNINGS@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/fposrec/Makefile.am src/mpeg4ip-1.6.1/lib/fposrec/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/fposrec/Makefile.am	2007-09-18 15:51:54.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/fposrec/Makefile.am	2008-05-25 22:40:09.750000000 -0500
 @@ -3,6 +3,8 @@
@@ -158,7 +149,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  EXTRA_DIST = libfileposrec60.dsp libfileposrec.vcproj
  
  INCLUDES = -I$(top_srcdir)/include
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/gnu/Makefile.am src/mpeg4ip-1.6.1/lib/gnu/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/gnu/Makefile.am	2007-09-18 15:51:55.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/gnu/Makefile.am	2008-05-25 22:40:09.765625000 -0500
 @@ -9,8 +9,10 @@
@@ -173,7 +163,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
 -AM_CFLAGS = -D_REENTRANT -Werror -Wall -Wcast-align -Wstrict-prototypes -Wmissing-prototypes
 +AM_CFLAGS = -D_REENTRANT -Wall -Wcast-align -Wstrict-prototypes -Wmissing-prototypes
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/ismacryp/Makefile.am src/mpeg4ip-1.6.1/lib/ismacryp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/ismacryp/Makefile.am	2007-09-18 15:51:56.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/ismacryp/Makefile.am	2008-05-25 22:40:09.781250000 -0500
 @@ -6,6 +6,8 @@
@@ -185,7 +174,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  AM_CFLAGS = -D_REENTRANT @BILLS_CWARNINGS@
  
  EXTRA_DIST = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/mp4/Makefile.am src/mpeg4ip-1.6.1/lib/mp4/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/mp4/Makefile.am	2007-09-18 15:51:57.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/mp4/Makefile.am	2008-05-25 22:40:09.796875000 -0500
 @@ -66,4 +66,6 @@
@@ -195,7 +183,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
 +libmp4_la_LDFLAGS = -no-undefined
 +
  EXTRA_DIST=libmp460.dsp README README_ORIGINAL libmp4.vcproj
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/mp4av/Makefile.am src/mpeg4ip-1.6.1/lib/mp4av/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/mp4av/Makefile.am	2007-09-18 15:51:58.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/mp4av/Makefile.am	2008-05-25 22:40:09.843750000 -0500
 @@ -6,6 +6,8 @@
@@ -221,7 +208,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
  EXTRA_DIST = libmp4av.dsp mp4av.vcproj
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/mp4v2/Makefile.am src/mpeg4ip-1.6.1/lib/mp4v2/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/mp4v2/Makefile.am	2007-09-18 15:51:59.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/mp4v2/Makefile.am	2008-05-25 22:40:09.859375000 -0500
 @@ -91,6 +91,8 @@
@@ -233,7 +219,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  EXTRA_DIST = API_CHANGES \
  	INTERNALS \
  	libmp4v260.dsp \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/mp4v2/util/Makefile.am src/mpeg4ip-1.6.1/lib/mp4v2/util/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/mp4v2/util/Makefile.am	2007-09-18 15:52:00.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/mp4v2/util/Makefile.am	2008-05-25 22:40:09.875000000 -0500
 @@ -3,7 +3,7 @@
@@ -257,7 +242,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  mp4tags_SOURCES = mp4tags.cpp
  mp4tags_LDADD = $(top_builddir)/lib/mp4v2/libmp4v2.la \
  	$(top_builddir)/lib/gnu/libmpeg4ip_gnu.la
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/mpeg2ps/Makefile.am src/mpeg4ip-1.6.1/lib/mpeg2ps/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/mpeg2ps/Makefile.am	2007-09-19 15:46:05.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/mpeg2ps/Makefile.am	2008-05-25 22:40:09.906250000 -0500
 @@ -12,10 +12,10 @@
@@ -286,7 +270,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
  EXTRA_DIST=libmpeg2ps.dsp libmpeg2ps.vcproj mpeg_ps_info.vcproj
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/msg_queue/Makefile.am src/mpeg4ip-1.6.1/lib/msg_queue/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/msg_queue/Makefile.am	2007-09-18 15:52:00.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/msg_queue/Makefile.am	2008-05-25 22:40:09.921875000 -0500
 @@ -4,6 +4,9 @@
@@ -299,7 +282,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  EXTRA_DIST = \
  	libmsg_queue60.dsp libmsg_queue.vcproj
  INCLUDES = -I$(top_srcdir)/include
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/rtp/Makefile.am src/mpeg4ip-1.6.1/lib/rtp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/rtp/Makefile.am	2007-09-18 15:52:01.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/rtp/Makefile.am	2008-05-25 22:40:09.937500000 -0500
 @@ -74,7 +74,7 @@
@@ -311,7 +293,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  test_rtp_client_SOURCES = test_rtp_client.c
  test_rtp_client_LDADD = libuclmmbase.la \
  	$(top_builddir)/lib/utils/libmutex.la \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/sdp/Makefile.am src/mpeg4ip-1.6.1/lib/sdp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/sdp/Makefile.am	2007-09-19 15:46:06.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/sdp/Makefile.am	2008-05-25 22:40:09.937500000 -0500
 @@ -10,6 +10,8 @@
@@ -323,7 +304,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  EXTRA_DIST = libsdp60.dsp libsdp.vcproj
  
  INCLUDES = -I$(top_srcdir)/include 
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/srtp/Makefile.am src/mpeg4ip-1.6.1/lib/srtp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/srtp/Makefile.am	2007-09-18 15:52:02.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/srtp/Makefile.am	2008-05-25 22:40:09.984375000 -0500
 @@ -10,6 +10,8 @@
@@ -335,7 +315,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  #EXTRA_DIST = README README.html
  
  check_PROGRAMS = test_srtp_client test_srtp_server
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/lib/utils/Makefile.am src/mpeg4ip-1.6.1/lib/utils/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/lib/utils/Makefile.am	2007-09-18 15:52:03.000000000 -0500
 +++ src/mpeg4ip-1.6.1/lib/utils/Makefile.am	2008-05-25 22:40:09.984375000 -0500
 @@ -10,6 +10,8 @@
@@ -347,7 +326,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  INCLUDES = -I$(top_srcdir)/include
  
  AM_CFLAGS = -D_REENTRANT @BILLS_CWARNINGS@
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/lib/audio/celp/BS/Makefile.am src/mpeg4ip-1.6.1/player/lib/audio/celp/BS/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/lib/audio/celp/BS/Makefile.am	2005-08-22 15:18:26.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/lib/audio/celp/BS/Makefile.am	2008-05-25 22:40:10.000000000 -0500
 @@ -24,6 +24,8 @@
@@ -359,7 +337,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  INCLUDES=-I$(srcdir)/../include
  AM_CFLAGS = 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/lib/audio/celp/dec/Makefile.am src/mpeg4ip-1.6.1/player/lib/audio/celp/dec/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/lib/audio/celp/dec/Makefile.am	2005-08-22 15:18:26.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/lib/audio/celp/dec/Makefile.am	2008-05-25 22:40:10.046875000 -0500
 @@ -43,6 +43,9 @@
@@ -372,7 +349,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  INCLUDES=-I$(srcdir)/../include
  AM_CFLAGS = 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/lib/audio/faad/Makefile.am src/mpeg4ip-1.6.1/player/lib/audio/faad/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/lib/audio/faad/Makefile.am	2007-09-18 15:52:04.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/lib/audio/faad/Makefile.am	2008-05-25 22:40:10.062500000 -0500
 @@ -32,6 +32,9 @@
@@ -385,7 +361,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  INCLUDES = -I$(top_srcdir)/include
  AM_CFLAGS = -O2 -Werror -Wall -fexceptions -fno-strict-aliasing
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/lib/libhttp/Makefile.am src/mpeg4ip-1.6.1/player/lib/libhttp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/lib/libhttp/Makefile.am	2007-09-18 15:52:06.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/lib/libhttp/Makefile.am	2008-05-25 22:40:10.078125000 -0500
 @@ -6,6 +6,7 @@
@@ -396,7 +371,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  libhttp_la_LIBADD = $(top_builddir)/lib/utils/libutils.la
  
  INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/lib/utils
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/lib/mp4util/Makefile.am src/mpeg4ip-1.6.1/player/lib/mp4util/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/lib/mp4util/Makefile.am	2007-09-18 15:52:07.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/lib/mp4util/Makefile.am	2008-05-25 22:40:10.078125000 -0500
 @@ -9,10 +9,13 @@
@@ -413,7 +387,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	$(top_builddir)/lib/mp4v2/libmp4v2.la
  
  INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/lib -I$(top_srcdir)/lib/mp4v2
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/a52dec/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/a52dec/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/a52dec/Makefile.am	2004-10-28 17:44:18.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/a52dec/Makefile.am	2008-05-25 22:40:10.125000000 -0500
 @@ -1,7 +1,7 @@
@@ -425,7 +398,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  a52_audio_plugin_la_SOURCES = \
  	a52dec.cpp a52dec.h ac3_file.cpp
  a52_audio_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/celp/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/celp/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/celp/Makefile.am	2007-09-18 15:52:08.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/celp/Makefile.am	2008-05-25 22:40:10.140625000 -0500
 @@ -1,10 +1,11 @@
@@ -441,7 +413,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	$(top_builddir)/player/lib/mp4util/libmp4util.la \
  	$(top_builddir)/player/lib/audio/celp/BS/libmpeg4ip_celpbs.la \
  	$(top_builddir)/player/lib/audio/celp/dec/libmpeg4ip_celp.la 
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/faad2/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/faad2/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/faad2/Makefile.am	2006-04-17 14:03:49.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/faad2/Makefile.am	2008-05-25 22:40:10.140625000 -0500
 @@ -1,7 +1,7 @@
@@ -453,7 +424,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  faad2_plugin_la_SOURCES = \
  	faad2.cpp \
  	faad2.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/ffmpeg/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/ffmpeg/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/ffmpeg/Makefile.am	2007-01-22 11:31:13.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/ffmpeg/Makefile.am	2008-05-25 22:40:10.187500000 -0500
 @@ -8,7 +8,7 @@
@@ -465,7 +435,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
  ffmpeg_audio_plugin_la_SOURCES = \
  	ffmpeg.cpp ffmpeg.h
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/g711/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/g711/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/g711/Makefile.am	2005-08-22 15:18:26.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/g711/Makefile.am	2008-05-25 22:40:10.203125000 -0500
 @@ -1,7 +1,7 @@
@@ -477,7 +446,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  g711_audio_plugin_la_SOURCES = \
  	ourg711.h ourg711.cpp
  g711_audio_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/audio/raw/Makefile.am src/mpeg4ip-1.6.1/player/plugin/audio/raw/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/audio/raw/Makefile.am	2004-02-24 19:18:56.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/audio/raw/Makefile.am	2008-05-25 22:40:10.218750000 -0500
 @@ -1,7 +1,7 @@
@@ -489,7 +457,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  raw_audio_plugin_la_SOURCES = \
  	rawa.cpp rawa.h
  raw_audio_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/h261/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/h261/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/h261/Makefile.am	2004-08-18 11:14:57.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/h261/Makefile.am	2008-05-25 22:40:10.234375000 -0500
 @@ -1,7 +1,7 @@
@@ -501,7 +468,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  h261_rtp_plugin_la_SOURCES = \
  	h261_rtp_plugin.cpp h261_rtp_plugin.h \
  	h261_userdata.h
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/h264/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/h264/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/h264/Makefile.am	2005-08-22 15:18:27.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/h264/Makefile.am	2008-05-25 22:40:10.265625000 -0500
 @@ -2,12 +2,13 @@
@@ -519,7 +485,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	$(top_builddir)/lib/mp4av/libmp4av.la \
  	$(top_builddir)/player/lib/mp4util/libmp4util.la \
  	-lm 
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_audio/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/isma_audio/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_audio/Makefile.am	2007-09-18 15:52:12.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/isma_audio/Makefile.am	2008-05-25 22:40:10.281250000 -0500
 @@ -3,8 +3,8 @@
@@ -549,7 +514,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
  INCLUDES = -I$(top_srcdir)/player/src \
  	   -I$(top_srcdir)/player/lib \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_href/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/isma_href/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_href/Makefile.am	2007-09-18 15:52:13.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/isma_href/Makefile.am	2008-05-25 22:40:10.281250000 -0500
 @@ -1,7 +1,7 @@
@@ -561,7 +525,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  href_rtp_plugin_la_SOURCES = \
  	href_plugin.cpp href_plugin.h 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_video/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/isma_video/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/isma_video/Makefile.am	2007-09-18 15:52:14.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/isma_video/Makefile.am	2008-05-25 22:40:10.328125000 -0500
 @@ -1,7 +1,7 @@
@@ -573,7 +536,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  isma_enc_video_rtp_plugin_la_SOURCES = \
  	isma_enc_video_plugin.cpp isma_enc_video_plugin.h 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc2429/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/rfc2429/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc2429/Makefile.am	2005-05-09 16:29:59.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/rfc2429/Makefile.am	2008-05-25 22:40:10.343750000 -0500
 @@ -1,7 +1,7 @@
@@ -585,7 +547,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  rfc2429_rtp_plugin_la_SOURCES = \
  	rfc2429_plugin.cpp rfc2429_plugin.h 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc3016/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/rfc3016/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc3016/Makefile.am	2005-10-03 16:13:10.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/rfc3016/Makefile.am	2008-05-25 22:40:10.343750000 -0500
 @@ -2,7 +2,7 @@
@@ -597,7 +558,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  latm_rtp_plugin_la_SOURCES = \
  	latm.cpp latm.h
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc3267/Makefile.am src/mpeg4ip-1.6.1/player/plugin/rtp/rfc3267/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/rtp/rfc3267/Makefile.am	2005-08-22 15:18:27.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/rtp/rfc3267/Makefile.am	2008-05-25 22:40:10.359375000 -0500
 @@ -2,12 +2,13 @@
@@ -615,7 +575,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	$(top_builddir)/lib/mp4av/libmp4av.la \
  	-lm 
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/text/href/Makefile.am src/mpeg4ip-1.6.1/player/plugin/text/href/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/text/href/Makefile.am	2007-09-18 15:52:15.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/text/href/Makefile.am	2008-05-25 22:40:10.703125000 -0500
 @@ -1,7 +1,7 @@
@@ -627,7 +586,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  href_text_plugin_la_SOURCES = \
  	href.cpp href.h
  href_text_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/text/plain/Makefile.am src/mpeg4ip-1.6.1/player/plugin/text/plain/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/text/plain/Makefile.am	2005-03-25 14:39:59.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/text/plain/Makefile.am	2008-05-25 22:40:10.718750000 -0500
 @@ -1,7 +1,7 @@
@@ -639,7 +597,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  plaintext_text_plugin_la_SOURCES = \
  	plaintext.cpp plaintext.h
  plaintext_text_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/video/ffmpeg/Makefile.am src/mpeg4ip-1.6.1/player/plugin/video/ffmpeg/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/video/ffmpeg/Makefile.am	2007-01-22 11:31:17.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/video/ffmpeg/Makefile.am	2008-05-25 22:40:10.718750000 -0500
 @@ -7,7 +7,7 @@
@@ -651,7 +608,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  ffmpeg_video_plugin_la_SOURCES = \
  	ffmpeg.cpp ffmpeg.h
  ffmpeg_video_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/video/h261/Makefile.am src/mpeg4ip-1.6.1/player/plugin/video/h261/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/video/h261/Makefile.am	2005-08-22 15:18:27.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/video/h261/Makefile.am	2008-05-25 22:40:10.781250000 -0500
 @@ -1,7 +1,7 @@
@@ -663,7 +619,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  h261_plugin_la_SOURCES = \
  	bsd-endian.h \
  	bv.c \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/video/mpeg2dec/Makefile.am src/mpeg4ip-1.6.1/player/plugin/video/mpeg2dec/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/video/mpeg2dec/Makefile.am	2004-03-15 17:56:31.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/video/mpeg2dec/Makefile.am	2008-05-25 22:40:10.796875000 -0500
 @@ -1,7 +1,7 @@
@@ -675,7 +630,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  mpeg2dec_video_plugin_la_SOURCES = \
  	mpeg2dec.cpp mpeg2dec.h
  mpeg2dec_video_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/video/raw/Makefile.am src/mpeg4ip-1.6.1/player/plugin/video/raw/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/video/raw/Makefile.am	2004-02-24 19:18:57.000000000 -0600
 +++ src/mpeg4ip-1.6.1/player/plugin/video/raw/Makefile.am	2008-05-25 22:40:10.796875000 -0500
 @@ -1,7 +1,7 @@
@@ -687,7 +641,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  raw_video_plugin_la_SOURCES = \
  	rawv.cpp rawv.h
  raw_video_plugin_la_LIBADD = \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/plugin/video/xvid/Makefile.am src/mpeg4ip-1.6.1/player/plugin/video/xvid/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/plugin/video/xvid/Makefile.am	2005-08-22 15:18:27.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/plugin/video/xvid/Makefile.am	2008-05-25 22:40:10.812500000 -0500
 @@ -12,7 +12,7 @@
@@ -708,7 +661,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  xvid_plugin_la_SOURCES = \
  	ourxvid.cpp \
  	ourxvid.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/Makefile.am src/mpeg4ip-1.6.1/player/src/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/src/Makefile.am	2007-09-18 15:52:16.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/Makefile.am	2008-05-25 22:40:10.859375000 -0500
 @@ -197,7 +197,6 @@
@@ -727,7 +679,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	@SDL_LIBS@ -lX11 @SRTPLIB@
  
  gmp4player_LDFLAGS= $(SDL_AUDIO_FLAGS)
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/codec/aa/Makefile.am src/mpeg4ip-1.6.1/player/src/codec/aa/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/src/codec/aa/Makefile.am	2007-09-18 15:52:17.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/codec/aa/Makefile.am	2008-05-25 22:40:10.859375000 -0500
 @@ -1,7 +1,7 @@
@@ -739,7 +690,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  aac_plugin_la_SOURCES = \
  	aac.cpp \
  	aac.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/codec/mp3/Makefile.am src/mpeg4ip-1.6.1/player/src/codec/mp3/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/src/codec/mp3/Makefile.am	2007-09-18 15:52:18.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/codec/mp3/Makefile.am	2008-05-25 22:40:10.875000000 -0500
 @@ -1,7 +1,7 @@
@@ -759,7 +709,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  	$(top_builddir)/lib/fposrec/libmpeg4ip_fposrec.la
  
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/codec/mpeg4/Makefile.am src/mpeg4ip-1.6.1/player/src/codec/mpeg4/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/src/codec/mpeg4/Makefile.am	2007-09-18 15:52:19.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/codec/mpeg4/Makefile.am	2008-05-25 22:40:10.921875000 -0500
 @@ -1,7 +1,7 @@
@@ -771,7 +720,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  mpeg4_iso_plugin_la_SOURCES = \
  	mpeg4.cpp \
  	mpeg4.h \
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/codec/wav/Makefile.am src/mpeg4ip-1.6.1/player/src/codec/wav/Makefile.am
 --- origsrc/mpeg4ip-1.6.1/player/src/codec/wav/Makefile.am	2005-08-22 15:18:27.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/codec/wav/Makefile.am	2008-05-25 22:40:10.921875000 -0500
 @@ -1,10 +1,11 @@
@@ -787,7 +735,6 @@ diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x
  
  libdir = @PLAYER_PLUGIN_DIR@
  
-diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4~' -x aclocal.m4t -x autom4te.cache -x config.cache -x config.log -x config.status -x config.h -x '*config.h.in' -x ABOUT-NLS -x Makefile.in.in -x Makevars.template -x '*SlackBuild*' -x '*.egg-info' -x '*.class' -x '*.pyc' -x '*.mo' -x '*.gmo' -x '*.orig' -x '*.rej' -x '*.spec' -x '*.temp' -x '*~' -x '*.stackdump' -x COPYING -x INSTALL -x compile -x config-ml.in -x config.guess -x config.sub -x depcomp -x elisp-comp -x install-sh -x libtool.m4 -x ltoptions.m4 -x ltsugar.m4 -x ltversion.m4 -x 'lt~obsolete.m4' -x ltmain.sh -x mdate-sh -x missing -x mkinstalldirs -x py-compile -x symlink-tree -x texinfo.tex -x ylwrap -x config.rpath -x aclocal.m4 -x Makefile.in -x makefile.in -x configure -x omf.make -x xmldocs.make -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x intltool-extract -x intltool-extract.in -x intltool-merge -x intltool-merge.in -x intltool-update -x intltool-update.in -x mpeg4-2000.h.in -x mpeg4ip_config.h.in origsrc/mpeg4ip-1.6.1/player/src/codec_plugin.cpp src/mpeg4ip-1.6.1/player/src/codec_plugin.cpp
 --- origsrc/mpeg4ip-1.6.1/player/src/codec_plugin.cpp	2005-04-22 14:20:44.000000000 -0500
 +++ src/mpeg4ip-1.6.1/player/src/codec_plugin.cpp	2008-05-25 22:40:10.937500000 -0500
 @@ -108,7 +108,11 @@
