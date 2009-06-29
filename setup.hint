@@ -1,5 +1,5 @@
 category: Audio Video
-requires: cygwin libmp4v2_0 libmp4v2-devel glib2 gtk2-x11 libSDL12 libX11_6 liba52_0 libavcodec51 libavutil49 libid3_383 libmpeg2_0 libxvidcore4
+requires: libmp4v2_0 libmp4v2-devel glib2 gtk2-x11 libSDL12 libX11_6 liba52_0 libavcodec51 libavutil49 libid3_383 libmpeg2_0 libxvidcore4
 sdesc: "Streaming multimedia player and utilities"
 ldesc: "MPEG4IP provides an end-to-end system to explore streaming 
 multimedia. The package includes many existing open source packages and 
